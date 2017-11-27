@@ -1,0 +1,121 @@
+
+a.out:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+__text:
+100000f30:	55 	push	rbp
+100000f31:	48 89 e5 	mov	rbp, rsp
+100000f34:	48 83 ec 10 	sub	rsp, 16
+100000f38:	c7 45 fc 00 00 00 00 	mov	dword ptr [rbp - 4], 0
+100000f3f:	c7 45 f8 00 00 00 00 	mov	dword ptr [rbp - 8], 0
+100000f46:	83 7d f8 0a 	cmp	dword ptr [rbp - 8], 10
+100000f4a:	0f 8d 1f 00 00 00 	jge	31 <_main+0x3F>
+100000f50:	48 8d 3d 43 00 00 00 	lea	rdi, [rip + 67]
+100000f57:	b0 00 	mov	al, 0
+100000f59:	e8 1a 00 00 00 	call	26
+100000f5e:	89 45 f4 	mov	dword ptr [rbp - 12], eax
+100000f61:	8b 45 f8 	mov	eax, dword ptr [rbp - 8]
+100000f64:	83 c0 01 	add	eax, 1
+100000f67:	89 45 f8 	mov	dword ptr [rbp - 8], eax
+100000f6a:	e9 d7 ff ff ff 	jmp	-41 <_main+0x16>
+100000f6f:	31 c0 	xor	eax, eax
+100000f71:	48 83 c4 10 	add	rsp, 16
+100000f75:	5d 	pop	rbp
+100000f76:	c3 	ret
+
+_main:
+100000f30:	55 	push	rbp
+100000f31:	48 89 e5 	mov	rbp, rsp
+100000f34:	48 83 ec 10 	sub	rsp, 16
+100000f38:	c7 45 fc 00 00 00 00 	mov	dword ptr [rbp - 4], 0
+100000f3f:	c7 45 f8 00 00 00 00 	mov	dword ptr [rbp - 8], 0
+100000f46:	83 7d f8 0a 	cmp	dword ptr [rbp - 8], 10
+100000f4a:	0f 8d 1f 00 00 00 	jge	31 <_main+0x3F>
+100000f50:	48 8d 3d 43 00 00 00 	lea	rdi, [rip + 67]
+100000f57:	b0 00 	mov	al, 0
+100000f59:	e8 1a 00 00 00 	call	26
+100000f5e:	89 45 f4 	mov	dword ptr [rbp - 12], eax
+100000f61:	8b 45 f8 	mov	eax, dword ptr [rbp - 8]
+100000f64:	83 c0 01 	add	eax, 1
+100000f67:	89 45 f8 	mov	dword ptr [rbp - 8], eax
+100000f6a:	e9 d7 ff ff ff 	jmp	-41 <_main+0x16>
+100000f6f:	31 c0 	xor	eax, eax
+100000f71:	48 83 c4 10 	add	rsp, 16
+100000f75:	5d 	pop	rbp
+100000f76:	c3 	ret
+Disassembly of section __TEXT,__stubs:
+__stubs:
+100000f78:	ff 25 92 00 00 00 	jmp	qword ptr [rip + 146]
+Disassembly of section __TEXT,__stub_helper:
+__stub_helper:
+100000f80:	4c 8d 1d 81 00 00 00 	lea	r11, [rip + 129]
+100000f87:	41 53 	push	r11
+100000f89:	ff 25 71 00 00 00 	jmp	qword ptr [rip + 113]
+100000f8f:	90 	nop
+100000f90:	68 00 00 00 00 	push	0
+100000f95:	e9 e6 ff ff ff 	jmp	-26 </var/folders/jw/h54pvvyn569f1k6jpfnx27b00000gn/T/hello-e46216.o+0xA5E39529>
+Disassembly of section __TEXT,__cstring:
+__cstring:
+100000f9a:	48 65 	gs
+100000f9c:	6c 	insb	byte ptr es:[rdi], dx
+100000f9d:	6c 	insb	byte ptr es:[rdi], dx
+100000f9e:	6f 	outsd	dx, dword ptr [rsi]
+100000f9f:	2c 20 	sub	al, 32
+100000fa1:	77 6f 	ja	111
+100000fa3:	72 6c 	jb	108
+100000fa5:	64 21 0a 	and	dword ptr fs:[rdx], ecx
+100000fa8:	00  <unknown>
+Disassembly of section __TEXT,__unwind_info:
+__unwind_info:
+100000fac:	01 00 	add	dword ptr [rax], eax
+100000fae:	00 00 	add	byte ptr [rax], al
+100000fb0:	1c 00 	sbb	al, 0
+100000fb2:	00 00 	add	byte ptr [rax], al
+100000fb4:	00 00 	add	byte ptr [rax], al
+100000fb6:	00 00 	add	byte ptr [rax], al
+100000fb8:	1c 00 	sbb	al, 0
+100000fba:	00 00 	add	byte ptr [rax], al
+100000fbc:	00 00 	add	byte ptr [rax], al
+100000fbe:	00 00 	add	byte ptr [rax], al
+100000fc0:	1c 00 	sbb	al, 0
+100000fc2:	00 00 	add	byte ptr [rax], al
+100000fc4:	02 00 	add	al, byte ptr [rax]
+100000fc6:	00 00 	add	byte ptr [rax], al
+100000fc8:	30 0f 	xor	byte ptr [rdi], cl
+100000fca:	00 00 	add	byte ptr [rax], al
+100000fcc:	34 00 	xor	al, 0
+100000fce:	00 00 	add	byte ptr [rax], al
+100000fd0:	34 00 	xor	al, 0
+100000fd2:	00 00 	add	byte ptr [rax], al
+100000fd4:	78 0f 	js	15 <__unwind_info+0x39>
+100000fd6:	00 00 	add	byte ptr [rax], al
+100000fd8:	00 00 	add	byte ptr [rax], al
+100000fda:	00 00 	add	byte ptr [rax], al
+100000fdc:	34 00 	xor	al, 0
+100000fde:	00 00 	add	byte ptr [rax], al
+100000fe0:	03 00 	add	eax, dword ptr [rax]
+100000fe2:	00 00 	add	byte ptr [rax], al
+100000fe4:	0c 00 	or	al, 0
+100000fe6:	01 00 	add	dword ptr [rax], eax
+100000fe8:	10 00 	adc	byte ptr [rax], al
+100000fea:	01 00 	add	dword ptr [rax], eax
+100000fec:	00 00 	add	byte ptr [rax], al
+100000fee:	00 00 	add	byte ptr [rax], al
+100000ff0:	00 00 	add	byte ptr [rax], al
+100000ff2:	00 01 	add	byte ptr [rcx], al
+Disassembly of section __DATA,__nl_symbol_ptr:
+__nl_symbol_ptr:
+100001000:	00 00 	add	byte ptr [rax], al
+100001002:	00 00 	add	byte ptr [rax], al
+100001004:	00 00 	add	byte ptr [rax], al
+100001006:	00 00 	add	byte ptr [rax], al
+100001008:	00 00 	add	byte ptr [rax], al
+10000100a:	00 00 	add	byte ptr [rax], al
+10000100c:	00 00 	add	byte ptr [rax], al
+10000100e:	00 00 	add	byte ptr [rax], al
+Disassembly of section __DATA,__la_symbol_ptr:
+__la_symbol_ptr:
+100001010:	90 	nop
+100001011:	0f 00 00 	sldt	word ptr [rax]
+100001014:	01 00 	add	dword ptr [rax], eax
+100001016:	00 00 	add	byte ptr [rax], al
